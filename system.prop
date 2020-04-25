@@ -21,7 +21,8 @@ persist.sys.usb.config=mtp,adb \
 ro.adb.secure=0
 
 # ART
-dalvik.vm.dex2oat-filter=speed 
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.dex2oat-filter=speed
 dalvik.vm.image-dex2oat-filter=speed
 ro.sys.fw.dex2oat_thread_count=8 
 dalvik.vm.boot-dex2oat-threads=8 
