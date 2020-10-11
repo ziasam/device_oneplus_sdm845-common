@@ -85,16 +85,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# Camera
+PRODUCT_PACKAGES += \
+    libcvface_api \
+    Snap
 
 # OnePlus Camera HIDL
 #PRODUCT_PACKAGES += \
 #    vendor.oneplus.camera.CameraHIDL@1.0 \
 #    vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper \
 #    vendor.oneplus.camera.CameraHIDL-V1.0-java
-
-# Camera
-PRODUCT_PACKAGES += \
-    snap
 
 # Prebuilts
 #PRODUCT_PACKAGES += \
