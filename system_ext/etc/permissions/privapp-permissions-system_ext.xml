@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+
+    <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.settings">
+        <permission name="android.permission.RESET_BATTERY_STATS"/>
+    </privapp-permissions>
+
+</permissions>
