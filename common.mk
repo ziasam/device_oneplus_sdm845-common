@@ -23,7 +23,7 @@ $(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-colt
+    $(LOCAL_PATH)/overlay-potato
 
 #PRODUCT_PACKAGES += \
 #    OnePlusIconShapeCircleOverlay \
@@ -33,10 +33,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 #    OnePlusIconShapeTeardropOverlay
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
-
-# TouchGestures
-PRODUCT_PACKAGES += \
-    TouchGestures
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
@@ -203,8 +199,9 @@ PRODUCT_PACKAGES += \
     RemovePackages
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+PRODUCT_BOARD_PLATFORM := sdm845
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Telephony
 PRODUCT_PACKAGES += \
